@@ -50,19 +50,19 @@ export function FaqSection() {
   };
 
   return (
-    <section id="faqs" className="py-16 md:py-24 bg-[#FFFFFF] border-b border-[#EAD397]">
+    <section id="faqs" className="py-16 md:py-24 bg-[#FFFFFF] border-b border-[#CDAB7D]/30">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#EAD397] border border-[#CDAC82] rounded-sm mb-3">
-            <HelpCircle className="w-3.5 h-3.5 text-[#AF7535]" />
-            <span className="text-xs uppercase tracking-widest text-[#AF7535] font-semibold">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#F8F5EF] border border-[#CDAB7D]/50 rounded-sm mb-3">
+            <HelpCircle className="w-3.5 h-3.5 text-[#B3742D]" />
+            <span className="text-xs uppercase tracking-widest text-[#B3742D] font-semibold">
               TRANSPARENCY & GOVERNANCE
             </span>
           </div>
-          <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-[#AF7535] tracking-tight">
+          <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-[#252525] tracking-tight">
             Frequently Addressed Questions
           </h2>
-          <p className="mt-3 text-base text-[#AF7535] opacity-90">
+          <p className="mt-3 text-base text-[#5F5F5F] leading-relaxed">
             Clear, unambiguous insights into our regulatory oversight, asset custody, and fiduciary protocols.
           </p>
         </div>
@@ -75,7 +75,7 @@ export function FaqSection() {
               <div
                 key={faq.id}
                 id={`faq-item-${faq.id}`}
-                className="bg-[#FFFFFF] border border-[#CDAC82] rounded-sm transition-all duration-200"
+                className="bg-[#FFFFFF] border border-[#CDAB7D]/40 rounded-sm transition-all duration-200 shadow-2xs"
               >
                 <button
                   type="button"
@@ -83,12 +83,14 @@ export function FaqSection() {
                   className="w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 cursor-pointer focus:outline-none"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-serif font-bold text-base sm:text-lg text-[#AF7535]">
+                  <span className="font-serif font-bold text-base sm:text-lg text-[#252525]">
                     {faq.question}
                   </span>
                   <div
                     className={`w-7 h-7 rounded-sm flex items-center justify-center shrink-0 transition-transform duration-200 ${
-                      isOpen ? 'bg-[#AF7535] text-[#FFFFFF] rotate-180' : 'bg-[#EAD397] text-[#AF7535]'
+                      isOpen
+                        ? 'bg-[#B3742D] text-[#FFFFFF] rotate-180'
+                        : 'bg-[#F8F5EF] text-[#B3742D] border border-[#CDAB7D]/30'
                     }`}
                   >
                     <ChevronDown className="w-4 h-4" />
@@ -96,9 +98,9 @@ export function FaqSection() {
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 pb-6 sm:px-6 text-sm text-[#AF7535] leading-relaxed border-t border-[#EAD397] pt-4">
+                  <div className="px-5 pb-6 sm:px-6 text-sm text-[#5F5F5F] leading-relaxed border-t border-[#CDAB7D]/20 pt-4">
                     <p>{faq.answer}</p>
-                    <div className="mt-3 flex items-center gap-1.5 text-xs text-[#C9A66B] font-medium">
+                    <div className="mt-3 flex items-center gap-1.5 text-xs text-[#B3742D] font-medium">
                       <ShieldCheck className="w-3.5 h-3.5" />
                       <span>FCA Compliance Standard Verified</span>
                     </div>

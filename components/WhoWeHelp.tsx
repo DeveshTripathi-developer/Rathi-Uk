@@ -16,20 +16,20 @@ export function WhoWeHelp({ onOpenConsultation }: WhoWeHelpProps) {
   return (
     <section
       id="who-we-help"
-      className="py-16 md:py-24 bg-[#FFFFFF] border-b border-[#EAD397]"
+      className="py-16 md:py-24 bg-[#FFFFFF] border-b border-[#CDAB7D]/30"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#EAD397] border border-[#CDAC82] rounded-sm mb-3">
-            <span className="text-xs uppercase tracking-widest text-[#AF7535] font-semibold">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#F8F5EF] border border-[#CDAB7D]/50 rounded-sm mb-3">
+            <span className="text-xs uppercase tracking-widest text-[#B3742D] font-semibold">
               WHO WE HELP
             </span>
           </div>
-          <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-[#AF7535] tracking-tight">
+          <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-[#252525] tracking-tight">
             Tailored Advice for Your Journey
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-[#AF7535] leading-relaxed">
+          <p className="mt-4 text-base sm:text-lg text-[#5F5F5F] leading-relaxed">
             Every wealth journey possesses distinct complexities. We apply bespoke risk-budgeted strategies designed specifically for UK high-net-worth individuals, business founders, senior partners, and cross-border families.
           </p>
         </div>
@@ -45,8 +45,8 @@ export function WhoWeHelp({ onOpenConsultation }: WhoWeHelpProps) {
                 onClick={() => setActiveTab(persona.id)}
                 className={`px-4 sm:px-6 py-3 rounded-sm text-sm font-semibold transition-all duration-200 cursor-pointer border ${
                   isActive
-                    ? 'bg-[#C9A66B] text-[#FFFFFF] border-[#C9A66B] shadow-sm'
-                    : 'bg-[#FFFFFF] text-[#AF7535] border-[#CDAC82] hover:bg-[#EAD397]'
+                    ? 'bg-[#B3742D] text-[#FFFFFF] border-[#B3742D] shadow-xs'
+                    : 'bg-[#FFFFFF] text-[#252525] border-[#CDAB7D]/40 hover:bg-[#F8F5EF] hover:text-[#B3742D]'
                 }`}
               >
                 {persona.title}
@@ -55,27 +55,27 @@ export function WhoWeHelp({ onOpenConsultation }: WhoWeHelpProps) {
           })}
         </div>
 
-        {/* Active Persona Banner & 3 Core Pillar Grid Cards (#FFFFFF cards with 1px #EAD397 border) */}
-        <div className="bg-[#EAD397] border border-[#CDAC82] rounded-sm p-6 sm:p-8 mb-8">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#CDAC82] pb-6 mb-8">
+        {/* Active Persona Banner & 3 Core Pillar Grid Cards */}
+        <div className="bg-[#F8F5EF] border border-[#CDAB7D]/40 rounded-sm p-6 sm:p-8 mb-8">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#CDAB7D]/30 pb-6 mb-8">
             <div>
-              <span className="text-xs font-mono uppercase tracking-wider text-[#AF7535] font-semibold">
+              <span className="text-xs font-mono uppercase tracking-wider text-[#B3742D] font-semibold">
                 Strategic Focus Area
               </span>
-              <h3 className="font-serif font-bold text-2xl sm:text-3xl text-[#AF7535] mt-1">
+              <h3 className="font-serif font-bold text-2xl sm:text-3xl text-[#252525] mt-1">
                 {activePersona.title}
               </h3>
-              <p className="text-sm sm:text-base text-[#AF7535] mt-1">
+              <p className="text-sm sm:text-base text-[#5F5F5F] mt-1">
                 {activePersona.tagline}
               </p>
             </div>
             <div className="flex items-center gap-3">
-              <span className="text-xs bg-[#FFFFFF] text-[#AF7535] border border-[#CDAC82] px-3 py-1.5 rounded-sm font-medium">
+              <span className="text-xs bg-[#FFFFFF] text-[#B3742D] border border-[#CDAB7D]/40 px-3 py-1.5 rounded-sm font-medium shadow-2xs">
                 {activePersona.metricsHighlight}
               </span>
               <button
                 onClick={onOpenConsultation}
-                className="bg-[#AF7535] hover:bg-[#C9A66B] text-[#FFFFFF] text-xs font-semibold px-4 py-2 rounded-sm transition-colors flex items-center gap-1.5"
+                className="bg-[#B3742D] hover:bg-[#7C4C21] text-[#FFFFFF] text-xs font-semibold px-4 py-2 rounded-sm transition-colors flex items-center gap-1.5 shadow-2xs"
               >
                 <span>Discuss Scope</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -83,28 +83,28 @@ export function WhoWeHelp({ onOpenConsultation }: WhoWeHelpProps) {
             </div>
           </div>
 
-          <p className="text-base text-[#AF7535] mb-8 leading-relaxed max-w-4xl">
+          <p className="text-base text-[#252525] mb-8 leading-relaxed max-w-4xl">
             {activePersona.overview}
           </p>
 
           {/* 3 Detailed Framework Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1: Wealth Preservation */}
-            <div className="bg-[#FFFFFF] border border-[#EAD397] rounded-sm p-6 shadow-sm flex flex-col justify-between">
+            <div className="bg-[#FFFFFF] border border-[#CDAB7D]/40 rounded-sm p-6 shadow-xs flex flex-col justify-between">
               <div>
-                <div className="w-10 h-10 rounded-sm bg-[#EAD397] flex items-center justify-center mb-4 border border-[#CDAC82]">
-                  <Shield className="w-5 h-5 text-[#AF7535]" />
+                <div className="w-10 h-10 rounded-sm bg-[#F8F5EF] flex items-center justify-center mb-4 border border-[#CDAB7D]/40">
+                  <Shield className="w-5 h-5 text-[#B3742D]" />
                 </div>
-                <h4 className="font-serif font-bold text-lg text-[#AF7535] mb-2">
+                <h4 className="font-serif font-bold text-lg text-[#252525] mb-2">
                   Wealth Preservation Framework
                 </h4>
-                <p className="text-xs text-[#AF7535] opacity-90 mb-4 leading-relaxed">
+                <p className="text-xs text-[#5F5F5F] mb-4 leading-relaxed">
                   Mitigating downside vulnerability through capital allocation that outpaces real inflation and economic contractions.
                 </p>
-                <div className="space-y-2 border-t border-[#EAD397] pt-3">
+                <div className="space-y-2 border-t border-[#CDAB7D]/20 pt-3">
                   {activePersona.challenges.map((c, i) => (
-                    <div key={i} className="flex items-start gap-2 text-xs text-[#AF7535]">
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#C9A66B] mt-1 shrink-0" />
+                    <div key={i} className="flex items-start gap-2 text-xs text-[#252525]">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#B3742D] mt-1 shrink-0" />
                       <span>{c}</span>
                     </div>
                   ))}
@@ -113,21 +113,21 @@ export function WhoWeHelp({ onOpenConsultation }: WhoWeHelpProps) {
             </div>
 
             {/* Card 2: Succession & Governance */}
-            <div className="bg-[#FFFFFF] border border-[#EAD397] rounded-sm p-6 shadow-sm flex flex-col justify-between">
+            <div className="bg-[#FFFFFF] border border-[#CDAB7D]/40 rounded-sm p-6 shadow-xs flex flex-col justify-between">
               <div>
-                <div className="w-10 h-10 rounded-sm bg-[#EAD397] flex items-center justify-center mb-4 border border-[#CDAC82]">
-                  <Sparkles className="w-5 h-5 text-[#AF7535]" />
+                <div className="w-10 h-10 rounded-sm bg-[#F8F5EF] flex items-center justify-center mb-4 border border-[#CDAB7D]/40">
+                  <Sparkles className="w-5 h-5 text-[#B3742D]" />
                 </div>
-                <h4 className="font-serif font-bold text-lg text-[#AF7535] mb-2">
+                <h4 className="font-serif font-bold text-lg text-[#252525] mb-2">
                   Succession & Governance Framework
                 </h4>
-                <p className="text-xs text-[#AF7535] opacity-90 mb-4 leading-relaxed">
+                <p className="text-xs text-[#5F5F5F] mb-4 leading-relaxed">
                   Structuring generational continuity, trust architecture, and smooth transfer with minimal friction and tax leakage.
                 </p>
-                <div className="space-y-2 border-t border-[#EAD397] pt-3">
+                <div className="space-y-2 border-t border-[#CDAB7D]/20 pt-3">
                   {activePersona.solutions.map((s, i) => (
-                    <div key={i} className="flex items-start gap-2 text-xs text-[#AF7535]">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-[#C9A66B] mt-0.5 shrink-0" />
+                    <div key={i} className="flex items-start gap-2 text-xs text-[#252525]">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#B3742D] mt-0.5 shrink-0" />
                       <span>{s}</span>
                     </div>
                   ))}
@@ -136,22 +136,22 @@ export function WhoWeHelp({ onOpenConsultation }: WhoWeHelpProps) {
             </div>
 
             {/* Card 3: Structured Risk & Deliverables */}
-            <div className="bg-[#FFFFFF] border border-[#EAD397] rounded-sm p-6 shadow-sm flex flex-col justify-between">
+            <div className="bg-[#FFFFFF] border border-[#CDAB7D]/40 rounded-sm p-6 shadow-xs flex flex-col justify-between">
               <div>
-                <div className="w-10 h-10 rounded-sm bg-[#EAD397] flex items-center justify-center mb-4 border border-[#CDAC82]">
-                  <TrendingUp className="w-5 h-5 text-[#AF7535]" />
+                <div className="w-10 h-10 rounded-sm bg-[#F8F5EF] flex items-center justify-center mb-4 border border-[#CDAB7D]/40">
+                  <TrendingUp className="w-5 h-5 text-[#B3742D]" />
                 </div>
-                <h4 className="font-serif font-bold text-lg text-[#AF7535] mb-2">
+                <h4 className="font-serif font-bold text-lg text-[#252525] mb-2">
                   Structured Risk & Advisory Mandate
                 </h4>
-                <p className="text-xs text-[#AF7535] opacity-90 mb-4 leading-relaxed">
+                <p className="text-xs text-[#5F5F5F] mb-4 leading-relaxed">
                   Institutional oversight with concrete portfolio deliverables tailored strictly to FCA compliance parameters.
                 </p>
-                <div className="space-y-2 border-t border-[#EAD397] pt-3">
+                <div className="space-y-2 border-t border-[#CDAB7D]/20 pt-3">
                   {activePersona.deliverables.map((d, i) => (
-                    <div key={i} className="flex items-center justify-between text-xs text-[#AF7535] p-2 bg-[#EAD397] bg-opacity-30 rounded-sm">
+                    <div key={i} className="flex items-center justify-between text-xs text-[#252525] p-2 bg-[#F8F5EF] border border-[#CDAB7D]/30 rounded-sm">
                       <span className="font-medium">{d}</span>
-                      <span className="text-[#C9A66B] font-mono text-[10px]">INCLUDED</span>
+                      <span className="text-[#B3742D] font-mono text-[10px]">INCLUDED</span>
                     </div>
                   ))}
                 </div>

@@ -3,12 +3,28 @@
 @theme {
   --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
   --font-sans: "Inter", "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Brand Palette Specified by User */
+  --color-brand-white: #FFFFFF;
+  --color-brand-ivory: #F8F5EF;
+  --color-brand-beige: #CDAB7D;
+  --color-brand-cream: #F1E1A6;
+  --color-brand-cream-gold: #F2DEA0;
+  --color-brand-gold: #CCA878;
+  --color-brand-muted-gold: #CAAB6A;
+  --color-brand-bronze: #B3742D;
+  --color-brand-bronze-dark: #7C4C21;
+  --color-brand-charcoal: #252525;
+  --color-brand-grey: #5F5F5F;
 }
 
 html {
   font-family: var(--font-sans);
+  color: #252525;
+  background-color: #FFFFFF;
 }
 
-h1, h2, h3, .font-serif {
+h1, h2, h3, h4, .font-serif {
   font-family: var(--font-serif);
 }
+

@@ -17,7 +17,7 @@ export function HomePageClient() {
   const [consultationOpen, setConsultationOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#FFFFFF] text-[#AF7535] flex flex-col selection:bg-[#EAD397] selection:text-[#AF7535]">
+    <div className="min-h-screen bg-[#FFFFFF] text-[#252525] flex flex-col selection:bg-[#F1E1A6] selection:text-[#252525]">
       {/* 1 & 2. Top Sticky Notification Bar and Main Navigation */}
       <Navbar onOpenConsultation={() => setConsultationOpen(true)} />
 

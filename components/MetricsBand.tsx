@@ -36,10 +36,10 @@ export function MetricsBand() {
   return (
     <section
       aria-label="Institutional Scale Metrics"
-      className="w-full bg-[#EAD397] border-y border-[#CDAC82] py-10 sm:py-14"
+      className="w-full bg-[#F8F5EF] border-y border-[#CDAB7D]/40 py-10 sm:py-14"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-[#CDAC82]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-[#CDAB7D]/40">
           {metrics.map((item, index) => {
             const IconComponent = item.icon;
             return (
@@ -51,17 +51,17 @@ export function MetricsBand() {
                 }`}
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-8 h-8 rounded-sm bg-[#FFFFFF] border border-[#CDAC82] flex items-center justify-center shrink-0">
-                    <IconComponent className="w-4 h-4 text-[#AF7535]" />
+                  <div className="w-9 h-9 rounded-sm bg-[#FFFFFF] border border-[#CDAB7D]/50 flex items-center justify-center shrink-0 shadow-xs">
+                    <IconComponent className="w-4 h-4 text-[#B3742D]" />
                   </div>
-                  <span className="font-serif font-bold text-2xl sm:text-3xl lg:text-4xl text-[#AF7535] tracking-tight">
+                  <span className="font-serif font-bold text-2xl sm:text-3xl lg:text-4xl text-[#B3742D] tracking-tight">
                     {item.stat}
                   </span>
                 </div>
-                <h3 className="font-semibold text-sm text-[#AF7535] uppercase tracking-wider">
+                <h3 className="font-semibold text-sm text-[#252525] uppercase tracking-wider">
                   {item.label}
                 </h3>
-                <p className="text-xs text-[#AF7535] mt-1 opacity-80">
+                <p className="text-xs text-[#5F5F5F] mt-1 leading-relaxed">
                   {item.sublabel}
                 </p>
               </div>

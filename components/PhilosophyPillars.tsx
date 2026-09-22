@@ -46,19 +46,19 @@ export function PhilosophyPillars() {
   return (
     <section
       id="thought-process"
-      className="py-16 md:py-24 bg-[#FFFFFF] border-b border-[#EAD397] overflow-hidden"
+      className="py-16 md:py-24 bg-[#FFFFFF] border-b border-[#CDAB7D]/30 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#EAD397] border border-[#CDAC82] rounded-sm mb-3">
-            <span className="text-xs uppercase tracking-widest text-[#AF7535] font-semibold">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#F8F5EF] border border-[#CDAB7D]/50 rounded-sm mb-3">
+            <span className="text-xs uppercase tracking-widest text-[#B3742D] font-semibold">
               OUR THOUGHT PROCESS
             </span>
           </div>
-          <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-[#AF7535] tracking-tight">
+          <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-[#252525] tracking-tight">
             Values That Create Trust
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-[#AF7535] leading-relaxed">
+          <p className="mt-4 text-base sm:text-lg text-[#5F5F5F] leading-relaxed">
             Our guiding ethos is built on institutional rigor, fiduciary independence, and direct human accountability.
           </p>
         </div>
@@ -70,34 +70,34 @@ export function PhilosophyPillars() {
               <div
                 key={pillar.id}
                 id={`pillar-${pillar.id}`}
-                className="bg-[#FFFFFF] border border-[#CDAC82] rounded-sm p-6 sm:p-7 shadow-sm hover:border-[#AF7535] hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between group"
+                className="bg-[#FFFFFF] border border-[#CDAB7D]/40 rounded-sm p-6 sm:p-7 shadow-xs hover:border-[#B3742D] hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between group"
               >
                 <div>
-                  <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#EAD397]">
-                    <div className="w-12 h-12 rounded-sm bg-[#EAD397] flex items-center justify-center border border-[#CDAC82] group-hover:bg-[#C9A66B] transition-colors">
-                      <IconComponent className="w-6 h-6 text-[#AF7535] group-hover:text-[#FFFFFF] transition-colors" />
+                  <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#CDAB7D]/20">
+                    <div className="w-12 h-12 rounded-sm bg-[#F8F5EF] flex items-center justify-center border border-[#CDAB7D]/40 group-hover:bg-[#B3742D] transition-colors">
+                      <IconComponent className="w-6 h-6 text-[#B3742D] group-hover:text-[#FFFFFF] transition-colors" />
                     </div>
-                    <span className="font-mono font-bold text-xs tracking-widest text-[#C9A66B]">
+                    <span className="font-mono font-bold text-xs tracking-widest text-[#B3742D]">
                       PILLAR {pillar.number}
                     </span>
                   </div>
 
-                  <h3 className="font-serif font-bold text-xl text-[#AF7535] mb-2">
+                  <h3 className="font-serif font-bold text-xl text-[#252525] mb-2">
                     {pillar.title}
                   </h3>
 
-                  <p className="text-sm font-semibold text-[#C9A66B] mb-3">
+                  <p className="text-sm font-semibold text-[#B3742D] mb-3">
                     {pillar.summary}
                   </p>
 
-                  <p className="text-xs text-[#AF7535] leading-relaxed opacity-90">
+                  <p className="text-xs text-[#5F5F5F] leading-relaxed">
                     {pillar.description}
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-[#EAD397] flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#AF7535]" />
-                  <span className="text-[11px] uppercase tracking-wider text-[#AF7535] font-medium">
+                <div className="mt-6 pt-4 border-t border-[#CDAB7D]/20 flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#B3742D]" />
+                  <span className="text-[11px] uppercase tracking-wider text-[#5F5F5F] font-medium">
                     Fiduciary Standard
                   </span>
                 </div>

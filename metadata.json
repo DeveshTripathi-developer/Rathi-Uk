@@ -1,0 +1,6 @@
+{
+  "name": "Anand Rathi Wealth UK",
+  "description": "FCA-regulated private wealth management firm in the City of London providing disciplined, data-led wealth stewardship for high-net-worth families.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
